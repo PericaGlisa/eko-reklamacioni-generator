@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="EKO Reklamacioni Centar Open Graph">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1f2f" />
+      <stop offset="0.6" stop-color="#134028" />
+      <stop offset="1" stop-color="#1f8a4c" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#35b86b" />
+      <stop offset="1" stop-color="#1d7a45" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="90" y="90" width="1020" height="450" rx="36" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" />
+  <rect x="90" y="90" width="1020" height="6" fill="url(#accent)" />
+  <circle cx="1030" cy="165" r="70" fill="rgba(255,255,255,0.08)" />
+  <circle cx="210" cy="470" r="90" fill="rgba(255,255,255,0.06)" />
+  <text x="140" y="240" font-size="56" font-weight="700" font-family="Arial, sans-serif" fill="#ffffff">EKO Reklamacioni Centar</text>
+  <text x="140" y="305" font-size="28" font-weight="500" font-family="Arial, sans-serif" fill="rgba(255,255,255,0.8)">
+    Brza digitalna reklamacija toplotnih pumpi
+  </text>
+  <text x="140" y="350" font-size="28" font-weight="500" font-family="Arial, sans-serif" fill="rgba(255,255,255,0.8)">
+    uz automatsko generisanje PDF dokumenta
+  </text>
+  <rect x="140" y="390" width="280" height="56" rx="18" fill="#1f8a4c" />
+  <text x="280" y="427" text-anchor="middle" font-size="22" font-weight="700" font-family="Arial, sans-serif" fill="#ffffff">
+    Generiši PDF
+  </text>
+</svg>
