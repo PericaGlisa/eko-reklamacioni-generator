@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { generatePdf, ReclamationData } from "@/lib/generatePdf";
+import { toast } from "@/hooks/use-toast";
 import SignaturePad from "@/components/SignaturePad";
 import FormProgressBar from "@/components/FormProgressBar";
 import FormStepper from "@/components/FormStepper";
@@ -196,13 +197,24 @@ const Index = () => {
   }, [reclamationNumber, signatureDataUrl, logoDataUrl]);
 
   const downloadPdf = () => {
-    if (!pdfBlob) return;
+    if (!pdfBlob) {
+      toast({
+        title: "PDF nije spreman",
+        description: "Prvo kliknite “Generiši PDF”, pa zatim “Preuzmi PDF”.",
+        variant: "destructive",
+      });
+      return;
+    }
     const url = URL.createObjectURL(pdfBlob);
     const a = document.createElement("a");
     a.href = url;
     a.download = `${reclamationNumber}.pdf`;
     a.click();
     URL.revokeObjectURL(url);
+    toast({
+      title: "Preuzimanje je pokrenuto",
+      description: `Fajl: ${reclamationNumber}.pdf`,
+    });
   };
 
   const sharePdf = async () => {
