@@ -274,7 +274,7 @@ const Index = () => {
           <div className="mt-6 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
             <div>
               <p className="text-xs uppercase tracking-[0.2em] text-white/40 font-semibold mb-1">Platforma</p>
-              <h1 className="text-xl sm:text-3xl font-extrabold tracking-tight">EKO Reklamacioni Centar</h1>
+              <h1 className="text-xl sm:text-3xl font-extrabold tracking-tight">Reklamacioni List</h1>
               <p className="text-xs sm:text-sm text-white/70 mt-1">Brza digitalna reklamacija toplotnih pumpi</p>
             </div>
             <div className="text-left sm:text-right">
